@@ -1,0 +1,112 @@
+body {
+    font-family: 'ZCOOL XiaoWei', serif; /* Font */
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #c0392b;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/* Filter */
+.filter-container {
+    margin: 20px;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+/* Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Dish Cards */
+.dish {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px; 
+    object-fit: cover;
+}
+
+
+
+
+h2 {
+    color: #c0392b;
+}
+
+/* Price */
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+/* Video*/
+.video-section {
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .video-section iframe {
+        height: 250px;              /* Change video height size on small screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Change to single column on small screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3-column layout on large screens */
+    }
+}

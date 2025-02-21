@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Cuisine Showcase</title>
+    <link rel="stylesheet" href="6dishes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Authentic Chinese Cuisine</h1>
+        <p>Discover six iconic Chinese dishes, each with its unique flavor and tradition.</p>
+    </header>
+
+    <!-- Category Filter -->
+    <div class="filter-container">
+        <label for="category">Filter by Cuisine:</label>
+        <select id="category" onchange="filterDishes()">
+            <option value="all">All</option>
+            <option value="Sichuan">Sichuan</option>
+            <option value="Cantonese">Cantonese</option>
+            <option value="Northern Cuisine">Northern Cuisine</option>
+        </select>
+    </div>
+
+    <!-- Dish Display--> 
+    
+    <main class="grid-container"> <!--Peking Duck--> 
+        <div class="dish" data-category="Northern Cuisine">
+            <img src="assets/pexels-polina-tankilevitch-5848604.jpg" alt="Peking Duck">
+            <h2>Peking Duck</h2>
+            <p>A famous Beijing dish known for its crispy skin and rich flavor, served with thin pancakes and hoisin
+                sauce.</p>
+            <p class="price">$28</p>
+        </div>
+
+        <div class="dish" data-category="Sichuan"> <!--Mapo Tofu-->
+            <img src="assets/tofu-2629785_1280.jpg" alt="Mapo Tofu">
+            <h2>Mapo Tofu</h2>
+            <p>A spicy Sichuan classic with tofu, minced pork, and a bold chili and Sichuan peppercorn sauce.</p>
+            <p class="price">$12</p>
+        </div>
+
+        <div class="dish" data-category="Cantonese"><!--Dim Sum-->
+            <img src="assets/dumplings-5700255_1280.jpg" alt="Dim Sum">
+            <h2>Dim Sum</h2>
+            <p>A variety of bite-sized Cantonese delicacies, including shrimp dumplings and BBQ pork buns, enjoyed with
+                tea.</p>
+            <p class="price">$15</p>
+        </div>
+
+        <div class="dish" data-category="Cantonese"><!--Sweet and Sour Pork-->
+            <img src="assets/sweet-and-sour-pork-1264563_1280.jpg" alt="Sweet and Sour Pork">
+            <h2>Sweet and Sour Pork</h2>
+            <p>A Cantonese favorite with crispy pork coated in a tangy sweet sauce, served with pineapples and bell
+                peppers.</p>
+            <p class="price">$16</p>
+        </div>
+
+        <div class="dish" data-category="Sichuan"><!--Kung Pao Chicken-->
+            <img src="assets/pexels-sydney-troxell-223521-718742.jpg" alt="Kung Pao Chicken">
+            <h2>Kung Pao Chicken</h2>
+            <p>A spicy and flavorful Sichuan dish with stir-fried chicken, peanuts, and dried chili peppers.</p>
+            <p class="price">$14</p>
+        </div>
+
+        <div class="dish" data-category="Northern Cuisine"><!--Zhajiangmian-->
+            <img src="assets/noodle-6896277_1280.jpg" alt="Zhajiangmian">
+            <h2>Zhajiangmian</h2>
+            <p>A northern Chinese noodle dish topped with a rich, savory soybean paste sauce, minced pork, and fresh
+                vegetables.</p>
+            <p class="price">$10</p>
+        </div>
+    </main>
+
+    <!-- Video Section -->
+     <h1>China Street Food Heaven!! 14-Hour CHINESE FOOD TOUR in Xi’an, China!!</h1>
+     <iframe width="560" height="315" 
+     src="https://www.youtube.com/embed/R4x9QJBfhXg" 
+     title="China Street Food Heaven!! 14-Hour CHINESE FOOD TOUR in Xi’an, China!!" 
+     frameborder="0" 
+     allowfullscreen>
+</iframe>
+
+
+    <footer>
+        <p>&copy; 2025 Chinese Dishes Showcase | Discover the taste of China</p>
+    </footer>
+
+    <script src="6dishes.js"></script>
+
+</body>
+
+</html>
