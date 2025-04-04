@@ -1,12 +1,11 @@
 body {
-    font-family: 'ZCOOL XiaoWei', serif; /* Font */
+    font-family: 'ZCOOL XiaoWei', serif;
     margin: 0;
     padding: 0;
     background-color: #fffaf0;
     text-align: center;
 }
 
-/* Header */
 header {
     background-color: #c0392b;
     color: white;
@@ -14,7 +13,94 @@ header {
     font-size: 1.5em;
 }
 
-/* Filter */
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 15px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    border: 2px solid #ffafbf;
+    box-shadow: 0 0 10px 2px #8a0d26;
+
+}
+
+#chat-log {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;           
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+#user-input {
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+#send-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 2px solid #d84315;
+    background-color: white;
+    color: #d84315;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#send-btn:hover {
+    background-color: #d84315;
+    color: white;
+}
+
+.user-msg {
+    background-color: #e3f2fd;
+    color: #1a73e8;
+    text-align: right;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border-radius: 16px 16px 0 16px;
+    max-width: 70%;
+    margin-left: auto;
+    font-size: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.ai-msg {
+    color: #d84315;
+    background-color: #fff3e0;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border-radius: 16px 16px 16px 0;
+    margin-right: 20%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+
 .filter-container {
     margin: 20px;
 }
@@ -24,7 +110,6 @@ select {
     font-size: 16px;
 }
 
-/* Layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -34,7 +119,7 @@ select {
     margin: auto;
 }
 
-/* Dish Cards */
+
 .dish {
     background: white;
     border-radius: 10px;
@@ -50,7 +135,7 @@ select {
 .dish img {
     width: 100%;
     border-radius: 10px;
-    height: 300px; 
+    height: 300px;
     object-fit: cover;
 }
 
@@ -61,15 +146,9 @@ h2 {
     color: #c0392b;
 }
 
-/* Price */
-.price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #27ae60;
-    margin-top: 10px;
-}
 
-/* Video*/
+
+
 .video-section {
     margin: 30px auto;
     max-width: 800px;
@@ -83,7 +162,7 @@ h2 {
     border-radius: 10px;
 }
 
-/* Footer */
+
 footer {
     background-color: #222;
     color: white;
@@ -91,22 +170,46 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsive */
+
 
 @media screen and (max-width: 600px) {
     .video-section iframe {
-        height: 250px;              /* Change video height size on small screens */
+        height: 250px;
+      
     }
 }
 
 @media screen and (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Change to single column on small screens */
+        grid-template-columns: 1fr;
+        
     }
 }
 
 @media screen and (min-width: 1200px) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* 3-column layout on large screens */
+        grid-template-columns: repeat(3, 1fr);
+      
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-container {
+        padding: 16px;
+        border-width: 1px;
+    }
+
+    #chat-log {
+        font-size: 15px;
+        max-height: 300px;
+    }
+
+    #user-input {
+        height: 70px;
+    }
+
+    #send-btn {
+        width: 100%;
+        font-size: 15px;
     }
 }
